@@ -71,6 +71,7 @@ jobs:
     - name: Push to Heroku
       run: |
         git fetch --prune --unshallow
+        git pull --rebase
         git push heroku main
 
 
