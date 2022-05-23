@@ -70,8 +70,7 @@ jobs:
         HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
     - name: Push to Heroku
       run: |
-        git show-ref
-#        git push heroku master
+        git push heroku main
 
 
         
